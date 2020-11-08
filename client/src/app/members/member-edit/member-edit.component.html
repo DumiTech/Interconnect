@@ -53,11 +53,10 @@
                         <input [(ngModel)]="member.country" type="text" name="country" class="form-control mx-2">
                     </div>
                 </form>
+
             </tab>
             <tab heading='Edit Photos'>
-                <h4>Photo edit will go here</h4>
-                <p>{{member.interests}}</p>
-                <h4>Looking for</h4>
+                <app-photo-editor [member]="member"></app-photo-editor>
             </tab>
         </tabset>
     </div>
